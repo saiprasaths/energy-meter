@@ -3,12 +3,12 @@ import {
   getAuth,
   signInWithEmailAndPassword,
   onAuthStateChanged,
-} from "https://www.gstatic.com/firebasejs/9.1.0/firebase-auth.js";
+} from "https://www.gstatic.com/firebasejs/9.17.2/firebase-auth.js";
 import {
   getDatabase,
   ref,
   set,
-} from "https://www.gstatic.com/firebasejs/9.1.0/firebase-database.js";
+} from "https://www.gstatic.com/firebasejs/9.17.2/firebase-database.js";
 
 const firebaseConfig = {
   apiKey: "AIzaSyBnG_yT0-nYDqevTZU3M6OAyf_C5wQlYqc",
@@ -24,27 +24,26 @@ const auth = getAuth(app);
 var email = document.getElementById("email");
 var password = document.getElementById("pass");
 
-const signin = document.getElementById("signin");
-const signout = document.getElementById("signout");
+//const signoutbtn = document.getElementById("signout");
 var email1;
 
-signin.onclick = () => {
-  signin();
-};
-
-function signin() {
-  signInWithEmailAndPassword(auth, email.value, password.value)
+window.login = function (e) {
+  var obj = {
+    email: email.value,
+    password: password.value
+  }
+  signInWithEmailAndPassword(auth, obj.email, obj.password)
     .then((userCredential) => {
-      const user = auth.currentUser;
+      const user = userCredential.user;
 
       localStorage.setItem("email", email.value);
 
       email1 = localStorage.getItem("email");
       console.log(email1);
 
-      alert("Signed in Successfully");
+      alert("Signed in Successfully"); 
 
-      location.href = "success.html";
+      location.href = "data.html";
     })
     .catch((error) => {
       const errorCode = error.code;
@@ -53,11 +52,11 @@ function signin() {
     });
 }
 
-signout.onclick = () => {
-  signout();
-};
+//signout.onclick = () => {
+//  signout();
+//};
 
-function singout() {
-  alert("Refreshing");
-  location.reload();
-}
+//function singout() {
+//  alert("Refreshing");
+//  location.reload();
+//}
