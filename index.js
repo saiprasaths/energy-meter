@@ -30,8 +30,8 @@ var email1;
 window.login = function (e) {
   var obj = {
     email: email.value,
-    password: password.value
-  }
+    password: password.value,
+  };
   signInWithEmailAndPassword(auth, obj.email, obj.password)
     .then((userCredential) => {
       const user = userCredential.user;
@@ -41,7 +41,7 @@ window.login = function (e) {
       email1 = localStorage.getItem("email");
       console.log(email1);
 
-      alert("Signed in Successfully"); 
+      alert("Signed in Successfully");
 
       location.href = "data.html";
     })
@@ -50,7 +50,7 @@ window.login = function (e) {
       const errorMessage = error.message;
       alert("Error " + error.code);
     });
-}
+};
 
 //signout.onclick = () => {
 //  signout();

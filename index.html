@@ -9,12 +9,23 @@
   </head>
   <body>
     <h2>ENERGY METER READING DATA PROCESSING</h2>
-    <form action="#" onsubmit="login(event)">
-      <input type="text" id="email" placeholder="Email" />
-      <input type="password" id="pass" placeholder="Password" />
-      <button id="signin" value="Sign In" class="btn">Sign in</button>
-      <!--<button id="signout">Sign out</button>  -->
-    </form>
+    <div class="container">
+      <section id="content">
+        <form action="#" onsubmit="login(event)">
+          <h1>Login Form</h1>
+          <div>
+            <input type="text" id="email" placeholder="Email" />
+          </div>
+          <div>
+            <input type="password" id="pass" placeholder="Password" />
+          </div>
+          <div>
+            <button type="submit" id="signin" value="Sign In" class="btn">Sign in</button>
+          </div>
+          <!--<button id="signout">Sign out</button>  -->
+        </form>
+      </section>
+    </div>
   </body>
   <script type="module" src="index.js"></script>
 </html>
