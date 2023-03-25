@@ -90,7 +90,7 @@ $(document).ready(function () {
         xhrObj.setRequestHeader("Content-Type", "application/octet-stream");
         xhrObj.setRequestHeader(
           "Ocp-Apim-Subscription-Key",
-          "7795ca497058453e8d189b31b8e96e3c"
+          "e12a28c0c3ff47049276a248ad91f25a"
         );
       },
       type: "POST",
@@ -115,7 +115,7 @@ $(document).ready(function () {
         //xhrObj.setRequestHeader("Content-Type", "application/octet-stream");
         xhrObj.setRequestHeader(
           "Ocp-Apim-Subscription-Key",
-          "7795ca497058453e8d189b31b8e96e3c"
+          "e12a28c0c3ff47049276a248ad91f25a"
         );
       },
       type: "GET",
