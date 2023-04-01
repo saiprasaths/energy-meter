@@ -1,0 +1,57 @@
+body{
+    background: linear-gradient(45deg, #FC466B, #3F5EFB);
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+    text-align: center;
+    color: linear-gradient(45deg, #2b29a2, #1ba356);
+}
+
+#main{
+    left      : 50%;
+    top       : 80%;
+    position  : absolute;
+    transform : translate(-50%, -50%);
+    background: white;
+    border-radius: 20px;
+    height: 750px;
+    width: 500px;
+}
+
+#click-photo{
+    margin:40px 30px 10px 50px;
+}
+
+#database{
+    margin:30px 30px 10px 150px;
+}
+
+
+button{
+    width: 200px;
+    height: 33px;
+    background: #2f2f2f;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 6px 20px -5px rgba(0,0,0,0.4);
+    
+}
+
+#submit{
+   right: 100px;
+   margin: 40px 30px 10px 50px;;
+}
+
+video{
+    height: 320px;
+    width: 400px;
+    margin: 5px 55px;
+}
+
+canvas{
+    margin: 10px 10px 10px 135px;
+}

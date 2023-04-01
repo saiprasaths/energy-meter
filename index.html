@@ -1,31 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>ENERGY METER READING DATA PROCESSING</title>
-  </head>
-  <body>
-    <h2>ENERGY METER READING DATA PROCESSING</h2>
-    <div class="container">
-      <section id="content">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>ENERGY METER READING DATA PROCESSING</title>
+</head>
+
+<body>
+  <div class="login">
+    <div class="login-screen">
+      <div class="app-title">
+        <h2>ENERGY METER READING DATA PROCESSING</h2>
+      </div>
+
+      <div class="login-form">
         <form action="#" onsubmit="login(event)">
-          <h1>Login Form</h1>
-          <div>
-            <input type="text" id="email" placeholder="Email" />
+          <div class="control-group">
+            <input type="text" class="login-field"  id="email" placeholder="Email" id="login-name">
+            <label class="login-field-icon fui-user"  for="login-name"></label>
           </div>
-          <div>
-            <input type="password" id="pass" placeholder="Password" />
+
+          <div class="control-group">
+            <input type="password" class="login-field" id="pass" placeholder="Password" id="login-pass">
+            <label class="login-field-icon fui-lock"  for="login-pass"></label>
           </div>
-          <div>
-            <button type="submit" id="signin" value="Sign In" class="btn">Sign in</button>
-          </div>
-          <!--<button id="signout">Sign out</button>  -->
-        </form>
-      </section>
+
+          <button type="submit" id="signin" value="Sign In" class="btn btn-primary btn-large btn-block" href="#">Sign In</button>
+      </div>
+      </form>
     </div>
-  </body>
-  <script type="module" src="index.js"></script>
+  </div>
+</body>
+<script type="module" src="index.js"></script>
+
 </html>
