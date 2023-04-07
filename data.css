@@ -1,6 +1,6 @@
 body{
-    background: linear-gradient(45deg, #FC466B, #3F5EFB);
-    height: 100vh;
+    background: linear-gradient(75deg, #FC466B, #3F5EFB);
+    height: 80vh;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -17,7 +17,8 @@ h1{
     background: white;
     border-radius: 20px;
     height: 750px;
-    width: 500px;
+    width: 450px;
+    padding-bottom:10px ;
 }
 
 #click-photo{
@@ -30,7 +31,7 @@ h1{
 
 
 button{
-    width: 200px;
+    width: 170px;
     height: 33px;
     background: #2f2f2f;
     color: #fff;
@@ -49,9 +50,9 @@ button{
 video{
     height: 320px;
     width: 400px;
-    margin: 5px 55px;
+    margin: 5px 27px;
 }
 
 canvas{
-    margin: 10px 10px 10px 135px;
+    margin: 10px 10px 10px 110px;
 }

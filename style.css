@@ -17,7 +17,7 @@ margin: 20px auto;
 background-color: #FFF;
 padding: 20px;
 border-radius: 5px;
-
+position: relative;
 }
 
 .app-title {
